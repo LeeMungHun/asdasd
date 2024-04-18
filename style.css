@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* 부모 요소의 너비를 100%로 설정합니다. */
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.task-container,
+.result-container {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-right: 20px;
+    width: 50%;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.details,
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.details textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 16px;
+}
+
+
+.result textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 16px;
+    height: 900px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.details textarea::placeholder,
+.result textarea::placeholder {
+    font-family: Arial, sans-serif;
+    /* 다른 요소와 동일한 폰트를 지정합니다. */
+}
+
+
+
+select {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    appearance: none;
+    background-color: white;
+    background-image: linear-gradient(45deg, transparent 50%, #ccc 50%),
+        linear-gradient(135deg, #ccc 50%, transparent 50%);
+    background-position: calc(100% - 19px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px);
+    /* 아이콘 위치 조정 */
+    background-size: 5px 5px;
+    background-repeat: no-repeat;
+}
+
+select:focus {
+    outline: none;
+    /* 포커스시 테두리 제거 */
+    border-color: #007bff;
+    /* 포커스시 테두리 색상 변경 */
+}

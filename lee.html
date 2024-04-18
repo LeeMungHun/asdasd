@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Task Report</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="container">
+        <div class="task-container">
+            <h2>Task Report</h2>
+            <div class="details">
+                <label>Task Title:</label>
+                <textarea class="ta_tasktitle" placeholder="Enter task title..."></textarea>
+                <label>Precondition:</label>
+                <textarea class="ta_precondition" placeholder="Enter precondition..."></textarea>
+                <label>Priority:</label>
+                <select id="priority">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <!--<option value="custom">Custom</option>-->
+                </select>
+                <label>Steps:</label>
+                <textarea class="ta_steps" placeholder="Enter steps..."></textarea>
+                <label>Actual Result:</label>
+                <textarea class="ta_actualresult" placeholder="Enter actual result..."></textarea>
+                <label>Expected Result:</label>
+                <textarea class="ta_expectedresult" placeholder="Enter expected result..."></textarea>
+                <label>Note:</label>
+                <textarea class="ta_note" placeholder="Enter note..."></textarea>
+                <label>Version:</label>
+                <textarea class="ta_version" placeholder="Enter version..."></textarea>
+            </div>
+        </div>
+        <div class="result-container">
+            <h2>Result</h2>
+            <div class="result">
+                <textarea class="ta_result" placeholder="Enter result..."></textarea>
+            </div>
+            <button class="btn-reset">초기화</button>
+            <button class="btn-restore">되돌리기</button>
+            <button class="btn-attach">이미지 첨부</button>
+            <button class="btn-copy">복사</button>
+        </div>
+    </div>
+
+    <script src="my.js"></script>
+</body>
+
+</html>
